@@ -3,13 +3,14 @@
  margin:0;
  padding:0;
  }
-/* body {
- text-align: center;
- background: url(/assets/indexBg.jpg) no-repeat;
- }*/
+body {
+
+background: url("body-back-new.jpg") no-repeat scroll 0 0 transparent;
+
+ }
 
 .first{
-  background: url("/assets/body-back-new.jpg") no-repeat scroll 0 0 transparent;
+  background: url("/assets/body-back-new.jpg") no-repeat scroll 0 0 transparent !important;
 }
 .second{
  text-align: center;
