@@ -10,6 +10,126 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
-//= require jquery_ujs
-//= require_tree .
+// require jquery
+// require jquery_ujs
+// require_tree .
+
+
+function onAfter() {
+  
+        $("#siva01").show();
+        $("#siva01").lettering().animateLetters({
+          opacity:0
+        },null,{
+          randomOrder:false,
+          time:1000,
+          reset:true
+        });
+        $("#wed01").show();
+        $("#wed01").lettering().animateLetters({
+          opacity:0
+        },null,{
+          randomOrder:false,
+          time:5000,
+          reset:true
+        });
+        $("#laxmi01").show();
+        $("#laxmi01").lettering().animateLetters({
+          opacity:0
+        },null,{
+          randomOrder:false,
+          time:8000,
+          reset:true
+        });
+
+
+
+}
+function onBefore(){
+
+}
+
+$(document).ready(function(){
+  setTimeout(function(){
+    //$("#flipbox").show();
+    
+    $('#flipbox').cycle({
+      fx:    'zoom',
+      sync:  false,
+      timeout: 5000,
+      before:  onBefore,
+      after:   onAfter
+    });
+
+      setTimeout(function(){
+         $("#flipbox1").hide();
+         $("#theater").show();
+       },15000);
+    
+//    $("#flipbox").flip({
+//      direction:'lr',
+//
+//      onBefore: function(){
+//
+//        $(this).css("background-color","#")
+//        },
+//      onEnd: function(){
+//        $("#siva01").show();
+//        $("#siva01").lettering().animateLetters({
+//          opacity:0
+//        },null,{
+//          randomOrder:false,
+//          time:1000,
+//          reset:true
+//        });
+//        $("#wed01").show();
+//        $("#wed01").lettering().animateLetters({
+//          opacity:0
+//        },null,{
+//          randomOrder:false,
+//          time:5000,
+//          reset:true
+//        });
+//        $("#laxmi01").show();
+//        $("#laxmi01").lettering().animateLetters({
+//          opacity:0
+//        },null,{
+//          randomOrder:false,
+//          time:8000,
+//          reset:true
+//        });
+////        setTimeout(function(){
+////          $("#flipbox").hide();
+////          $("#theater").show();
+////       },5000);
+//      }
+//
+//    });
+  }, 1000);
+
+
+ $("#ropeGroom").hide();
+	$curtainopen = false;
+ 	$(".rope").click(function(){
+                $('body').removeClass('first').addClass('second');
+		$(this).blur();
+		if ($curtainopen == false){
+			$(this).stop().animate({top: '0px' }, {queue:false, duration:350, easing:'easeOutBounce'});
+			$(".leftcurtain").stop().animate({width:'60px'}, 2000 );
+			$(".rightcurtain").stop().animate({width:'60px'},2000 );
+			$curtainopen = true;
+			$('#ropeAct').slideUp('fast');
+			$("#ropeGroom").slideDown('slow');
+		}else{
+			$(this).stop().animate({top: '-40px' }, {queue:false, duration:350, easing:'easeOutBounce'});
+			$(".leftcurtain").stop().animate({width:'50%'}, 2000 );
+			$(".rightcurtain").stop().animate({width:'51%'}, 2000 );
+			$curtainopen = false;
+		}
+		return false;
+	});
+
+	
+  
+});
+

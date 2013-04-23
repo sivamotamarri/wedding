@@ -1,2 +1,34 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+
+
+<div  id="flipbox1" style="visibility: visible;">
+  <span style="margin-top:130px;float: left;">
+    <pre>
+     <span id="siva01" style="display:none;">Siva</span>
+         <span id="wed01" style="display:none;">Weds</span>
+           <span id="laxmi01" style="display:none;">Laxmi</span>
+    </pre>
+  </span>
+  <div id="flipbox">
+  <img src="/assets/love.png" alt="img" style="display:none;"/>
+  <img src="/assets/love.png" alt="img" style="display:none;"/>
+  </div>
+  <span style="height:5px;">&nbsp;</span><br/><br/>
+  
+</div>
+<div id="theater" style="display:none;">
+  <div class="leftcurtain"><img src="/assets/curtain.jpg" /></div>
+ <div class="rightcurtain"><img src="/assets/curtain.jpg" /></div>
+ <img id="image1" class="logo" src="/assets/myWeddingCard.png" height="635"/>
+ <a class="rope" id="ropeAct" href="#"><img src="/assets/rope.png"/></a>
+ <a class="rope1" id="ropeGroom" href="<%= groom_path() %>"><img src="/assets/rope.png"/></a>
+</div>
+
+ 
+<script>
+  //$('#image1').addimagezoom({ // single image zoom
+	//	magnifiersize: [350,350],
+	//	magnifierpos: 'left',
+	//	cursorshade: true,
+	//	largeimage: '/assets/myWeddingCard.png' //<-- No comma after last option!
+	//})
+</script>

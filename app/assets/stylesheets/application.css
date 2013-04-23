@@ -11,3 +11,20 @@
  *= require_self
  *= require_tree .
  */
+#flipbox1 {
+    background: url("love.png") no-repeat scroll 0 0 transparent !important;
+    color: #ffffff;
+    font-family: 'ChunkFive Regular',Tahoma,Helvetica;
+    font-size: 2.5em;
+    height: 100%;
+    
+    /*text-align: center;*/
+    height: 435px !important;
+    
+    margin: 200px 573px 96px 162px;
+    background-color: none !important;
+    
+}
+body{
+  background: url("body-back-new.jpg") no-repeat scroll 0 0 transparent;
+}

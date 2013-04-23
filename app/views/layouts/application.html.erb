@@ -3,10 +3,17 @@
 <head>
   <title>Wedding</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
+
+  <%= javascript_include_tag "muhurtham/jquery-1.9.1.js" %>
+  <%= javascript_include_tag "muhurtham/jquery-ui.js" %>
+  <%= javascript_include_tag "brideGroom/jquery.lettering.animate.js" %>
+  <%= javascript_include_tag "brideGroom/jquery.lettering.js" %>
+  <%= javascript_include_tag "jquery.cycle.all.js" %>
   <%= javascript_include_tag "application" %>
+
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body class="first">
 
 <%= yield %>
 
