@@ -1,0 +1,8 @@
+/*
+ * jquery-counter plugin
+ *
+ * Copyright (c) 2009 Martin Conte Mac Donell <Reflejo@gmail.com>
+ * Dual licensed under the MIT and GPL licenses.
+ * http://docs.jquery.com/License
+ */
+jQuery.fn.countdown=function(i){var t,e={stepTime:60,format:"dd:hh:mm:ss",startTime:"01:12:32:55",digitImages:6,digitWidth:53,digitHeight:77,timerEnd:function(){},image:"digits.png"},a=[],g=function(i){for(var t=0,g=0;e.startTime.length>g;g++){if(parseInt(e.startTime[g])>=0){switch(elem=$('<div id="cnt_'+g+'" class="cntDigit" />').css({height:10*e.digitHeight*e.digitImages,"float":"left",background:"url('"+e.image+"')",width:e.digitWidth}),a.push(elem),s(t,-(parseInt(e.startTime[g])*e.digitHeight*e.digitImages)),a[t].__max=9,e.format[g]){case"h":a[t].__max=0==t%2?2:9,0==t%2&&(a[t].__condmax=4);break;case"d":a[t].__max=9;break;case"m":case"s":a[t].__max=0==t%2?5:9}++t}else elem=$('<div class="cntSeparator"/>').css({"float":"left"}).text(e.startTime[g]);i.append(elem)}},s=function(i,t){return void 0!==t?a[i].css({marginTop:t+"px"}):parseInt(a[i].css("marginTop").replace("px",""))},d=function(i){return a[i]._digitInitial=-(a[i].__max*e.digitHeight*e.digitImages),function g(){if(mtop=s(i)+e.digitHeight,mtop==e.digitHeight){if(s(i,a[i]._digitInitial),!(i>0)){clearInterval(t);for(var n=0;a.length>n;n++)s(n,0);return e.timerEnd(),void 0}return d(i-1)(),i>0&&void 0!==a[i].__condmax&&a[i-1]._digitInitial==s(i-1)&&s(i,-(a[i].__condmax*e.digitHeight*e.digitImages)),void 0}s(i,mtop),0!=s(i)/e.digitHeight%e.digitImages&&setTimeout(g,e.stepTime),0==mtop&&(a[i].__ismax=!0)}};$.extend(e,i),this.css({height:e.digitHeight,overflow:"hidden"}),g(this),t=setInterval(d(a.length-1),1e3)};
