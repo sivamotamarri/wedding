@@ -15,7 +15,7 @@ body{
 	float:left;
 	margin-left:20%;
 	margin-top:5%;
-	width:44%;
+	width:63%;
 	line-height: 50px;
 	color:#009933;
 	font-weight:bold;
@@ -25,7 +25,7 @@ body{
 }
 .photoInfo dl{
 	float:left;
-	width:30%;
+	/*width:30%;*/
 	margin:0;
 	display:none;
 	text-align:left;
@@ -48,10 +48,9 @@ body{
 	text-align:center;
 }
 #innerContent{
-	width:80%;	
+	width:80%;
 	margin: 0 auto;
-	padding-top:70px;
-        height: 430px;
+	padding-top:20px;
 }
 a {
     float: right;
@@ -61,4 +60,11 @@ a {
 	font-weight:bold;
 	text-decoration:none;
 	padding-right:10px;
+}
+.timeFlag{
+	text-align:right;
+	color:#00CC33;
+	font-family:Baroque Script;
+	font-size:24px;	
+	background-position:bottom;	
 }
