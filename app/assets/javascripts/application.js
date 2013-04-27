@@ -63,48 +63,10 @@ $(document).ready(function(){
 
       setTimeout(function(){
          $("#flipbox1").hide();
+		 $('body').removeClass('first').addClass('second');
          $("#theater").show();
        },15000);
-    
-//    $("#flipbox").flip({
-//      direction:'lr',
-//
-//      onBefore: function(){
-//
-//        $(this).css("background-color","#")
-//        },
-//      onEnd: function(){
-//        $("#siva01").show();
-//        $("#siva01").lettering().animateLetters({
-//          opacity:0
-//        },null,{
-//          randomOrder:false,
-//          time:1000,
-//          reset:true
-//        });
-//        $("#wed01").show();
-//        $("#wed01").lettering().animateLetters({
-//          opacity:0
-//        },null,{
-//          randomOrder:false,
-//          time:5000,
-//          reset:true
-//        });
-//        $("#laxmi01").show();
-//        $("#laxmi01").lettering().animateLetters({
-//          opacity:0
-//        },null,{
-//          randomOrder:false,
-//          time:8000,
-//          reset:true
-//        });
-////        setTimeout(function(){
-////          $("#flipbox").hide();
-////          $("#theater").show();
-////       },5000);
-//      }
-//
-//    });
+ 
   }, 1000);
 
 
@@ -118,8 +80,7 @@ $(document).ready(function(){
 			$(".leftcurtain").stop().animate({width:'60px'}, 2000 );
 			$(".rightcurtain").stop().animate({width:'60px'},2000 );
 			$curtainopen = true;
-			$('#ropeAct').slideUp('fast');
-			$("#ropeGroom").slideDown('slow');
+			$('#ropeAct').hide();
 		}else{
 			$(this).stop().animate({top: '-40px' }, {queue:false, duration:350, easing:'easeOutBounce'});
 			$(".leftcurtain").stop().animate({width:'50%'}, 2000 );
@@ -128,8 +89,46 @@ $(document).ready(function(){
 		}
 		return false;
 	});
-
+$('.item').hover(
+                function(){
+                    var $this = $(this);
+                    expand($this);
+                },
+                function(){
+                    var $this = $(this);
+                    collapse($this);
+                }
+            );
 	
   
 });
 
+
+            function expand($elem){
+                var angle = 0;
+                var t = setInterval(function () {
+                    if(angle == 1440){
+                        clearInterval(t);
+                        return;
+                    }
+                    angle += 40;
+                    $('.link',$elem).stop().animate({rotate: '+=-40deg'}, 0);
+                },10);
+                $elem.stop().animate({width:'168px'}, 1000)
+                .find('.item_content').fadeIn(400,function(){
+                    $(this).find('p').stop(true,true).fadeIn(600);
+                });
+            }
+            function collapse($elem){
+                var angle = 1440;
+                var t = setInterval(function () {
+                    if(angle == 0){
+                        clearInterval(t);
+                        return;
+                    }
+                    angle -= 40;
+                    $('.link',$elem).stop().animate({rotate: '+=40deg'}, 0);
+                },10);
+                $elem.stop().animate({width:'52px'}, 1000)
+                .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
+            }

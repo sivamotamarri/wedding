@@ -1,37 +1,39 @@
-
-<style type="text/css">
-      section { text-align: center; margin: 50px 0; }
-</style>
 <script src="/assets/zoom/modernizr.js"></script>
 <div  id="flipbox1" style="visibility: visible;">
   <span style="margin-top:130px;float: left;">
     <pre>
-     <span id="siva01" style="display:none;">Siva</span>
-         <span id="wed01" style="display:none;">Weds</span>
-           <span id="laxmi01" style="display:none;">Laxmi</span>
+       <span id="siva01" style="display:none;">Siva Krishna</span>
+          <span id="wed01" style="display:none;">Weds</span>
+           <span id="laxmi01" style="display:none;">Lakshmi</span>
     </pre>
   </span>
   <div id="flipbox">
-  <img src="/assets/love.png" alt="img" style="display:none;"/>
-  <img src="/assets/love.png" alt="img" style="display:none;"/>
+  <img src="/assets/love.png" alt="img" style="display:none; padding-left:70px; padding-top:23px" width="409"/>
+  <img src="/assets/love.png" alt="img" style="display:none; padding-left:70px; padding-top:23px" width="409"/>
   </div>
   <span style="height:5px;">&nbsp;</span><br/><br/>
   
 </div>
-<div id="theater" style="display:none;">
-  <div class="leftcurtain"><img src="/assets/curtain.jpg" /></div>
- <div class="rightcurtain"><img src="/assets/curtain.jpg" /></div>
-  <section>
-     <div id="panzoom" style="text-align: center">
- <img id="image1" class="logo" src="/assets/myWeddingCard.png" height="635"/>
-     </div>
-  </section>
- <section class="buttons">
-      <button class="zoom-in">Zoom In</button>
-      <button class="zoom-out">Zoom Out</button>     
-    </section>
- <a class="rope" id="ropeAct" href="#"><img src="/assets/rope.png"/></a>
- <a class="rope1" id="ropeGroom" href="<%= groom_path() %>"><img src="/assets/rope.png"/></a>
+<div id="theater" style="display:none">
+	<div class="leftcurtain"><img src="/assets/curtain.jpg" /></div>
+	<div class="rightcurtain"><img src="/assets/curtain.jpg" /></div>	
+<div class="container">
+	<div class="leftContainer">
+		<div class="zoomButtonDiv">
+			<button class="zoom-in zoomButtons">Zoom In</button>
+		  	<button class="zoom-out zoomButtons">Zoom Out</button>     
+		</div>
+		<section>
+			<div id="panzoom" style="text-align: center">
+				<img id="image1" class="logo" src="/assets/myWeddingCard.png" height="535"/>
+			</div>
+		</section>
+	</div>
+	<div class="rightContainer">		
+        <%= render("shared/right_menu") %>
+	</div>
+</div>
+<a class="rope" id="ropeAct" href="#"><img src="/assets/rope.png"/></a>
 </div>
 
  

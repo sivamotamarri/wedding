@@ -1,42 +1,31 @@
-<div id="wrapper">
-	<div id="header">
-                <marquee behavior="scroll" scrollamount="5">
-                  <img src="/assets/flight.png" alt="flight" height="90px" width="600px;"/>
-                  <div class="timeFlag" id="countdown"></div>
-                </marquee>
-		<div id="innerContent" align="center">
+<div class="container">
+	<div class="leftContainer">
+		<div class="leftInner">
+			<marquee behavior="scroll" scrollamount="5">
+			  <img src="/assets/flight.png" alt="flight" height="90px" width="600px;"/>
+			  <div class="timeFlag" id="countdown"></div>
+			</marquee>
 			<div class="box" id="example01">
 				<h2 id="title01" align="center" >About Groom</h2>
 			</div>
-			<div class="photo" id="example02">
-				<img id="car1" src="/assets/siva.png" />
+			<div class="leftInnerLeft">
+				<div class="photo" id="example02">
+					<img id="car1" src="/assets/siva.png" />
+				</div>
 			</div>
-			<div class="photoInfo" id="photoInfo">
-				<dl id="dlName">Name</dl>
-				<dd id="ddName">Siva Krishna</dd>
-				<dl id="dlQual">Qualification</dl>
-				<dd id="ddQual">MCA</dd>
-				<dl id="dlAge">Age</dl>
-				<dd id="ddAge">Dont Ask :)</dd>
+			<div class="leftInnerRight">
+				<div class="photoInfo" id="photoInfo">
+					<dl id="dlName">Name</dl>
+					<dd id="ddName">Siva Krishna</dd>
+					<dl id="dlQual">Qualification</dl>
+					<dd id="ddQual">MCA</dd>
+					<dl id="dlAge">Age</dl>
+					<dd id="ddAge">Dont Ask :)</dd>
+				</div>
 			</div>
-		</div>
-		<div>
-			<a href="<%=  bride_path() %>">Bride Info</a>
 		</div>
 	</div>
+	<div class="rightContainer">		
+        <%= render("shared/right_menu") %>
+	</div>	
 </div>
-
-<style>
-  .timeFlag{
-	text-align:right;
-	width:370px;
-	margin-top: -77px;
-        margin-left: 80px;
-	color:#00CC33;
-	font-family:Baroque Script;
-	font-size:24px;
-	padding-right:30px;
-	background-position:bottom;
-
-}
-</style>

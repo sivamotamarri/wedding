@@ -1,57 +1,43 @@
 /* CSS Document */
 
 body{
+	color:#FFFFFF;
+	background: url(/assets/indexBg.jpg) center center fixed;
+	background-size:cover;
 	padding:0;
 	margin:0;
-	font-family: "Baroque Script";
-	color:#FFFFFF;
-	background: #000  url(/assets/indexBg.jpg) no-repeat center center !important;
+	font-family:myWeddingFont;
 }
 .photo{
-	float:left;
-	width:15%;
+	float:right;
+	width:80%;
 }
 .photoInfo{
 	float:left;
-	margin-left:20%;
+	margin-left:10%;
 	margin-top:5%;
-	width:63%;
+	width:80%;
 	line-height: 50px;
 	color:#009933;
 	font-weight:bold;
-	 background: -webkit-linear-gradient(#eee, #333);
+	background: -webkit-linear-gradient(#eee, #333);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .photoInfo dl{
 	float:left;
-	/*width:30%;*/
 	margin:0;
 	display:none;
 	text-align:left;
 }
 .photoInfo dd{
-	float:left;
+	float:right;
 	width:60%;
 	display:none;
 	text-align:left;
 	padding-left:25px;
 }
-#wrapper{
-	width:920px;
-	margin:0 auto;
-}
 
-#header{
-	height: 820px;
-	background: url("/assets/abstract-background-wallpaper-tws.jpg") no-repeat scroll 0 -40px transparent;
-	text-align:center;
-}
-#innerContent{
-	width:80%;
-	margin: 0 auto;
-	padding-top:20px;
-}
 a {
     float: right;
     color: #fff;
@@ -63,8 +49,41 @@ a {
 }
 .timeFlag{
 	text-align:right;
+	width:370px;
+	margin-top: -77px;
+        margin-left: 80px;
 	color:#00CC33;
 	font-family:Baroque Script;
-	font-size:24px;	
+	font-size:24px;
+	padding-right:30px;
 	background-position:bottom;	
+}
+.container{
+	width:90%;
+}
+.leftContainer{
+	width:95%;
+	float:left;
+	background: url("/assets/abstract-background-wallpaper-tws.jpg") no-repeat;
+	background-position:right;
+}
+.rightContainer{
+	width:5%;
+	float:left;
+}
+.leftInner{
+	margin:0 auto;
+	width:88%;
+	float:right;
+}
+.leftInnerLeft{
+	float:left;
+	width:30%;	
+}
+.leftInnerRight{
+	float:left;
+	width:70%;
+	
+	
+	
 }
