@@ -10,8 +10,11 @@ $(document).ready(function(){
 		delayLettringFn("dlQual", 5000);
 		delayLettringFn("ddQual", 7000);
 
-		delayLettringFn("dlAge", 8500);
-		delayLettringFn("ddAge", 9500);
+		delayLettringFn("dlLang", 8500);
+		delayLettringFn("ddLang", 10000);
+		
+		delayLettringFn("dlAge", 15000);
+		delayLettringFn("ddAge", 16500);
 
 
 		var BigDay = new Date("3 May 2013, 11:30:00");
