@@ -55,10 +55,10 @@ a {
 .timeFlag{
 	text-align:right;
 	width:370px;
-	margin-top: -77px;
-        margin-left: 80px;
+	margin-top: -99px;
+        margin-left: 130px;
 	color:#00CC33;
-	font-family:Baroque Script;
+	font-family:myWeddingFont;
 	font-size:24px;
 	padding-right:30px;
 	background-position:bottom;	
@@ -89,7 +89,4 @@ a {
 .leftInnerRight{
 	float:left;
 	width:75%;
-	
-	
-	
 }
