@@ -4,17 +4,21 @@ $(document).ready(function(){
 		$("#title01").css("display","block");
 		$("#title01").lettering().animateLetters({opacity:0},null,{randomOrder:false,time:1000,reset:true});
 
-		delayLettringFn("dlName", 2000);
-		delayLettringFn("ddName", 3000);
+		delayLettringFn("bgNameLabel", 2000);
+		delayLettringFn("bgNameData", 3000);
 
-		delayLettringFn("dlQual", 5000);
-		delayLettringFn("ddQual", 7000);
+		delayLettringFn("bgBelongLabel", 5000);
+		delayLettringFn("bgBelongData", 7000);
 
-		delayLettringFn("dlLang", 8500);
-		delayLettringFn("ddLang", 10000);
+		delayLettringFn("bgHailsLabel", 10000);
+		delayLettringFn("bgHailsData", 12000);
 		
-		delayLettringFn("dlAge", 15000);
-		delayLettringFn("ddAge", 16500);
+		delayLettringFn("bgAgeLabel", 13000);
+		delayLettringFn("bgAgeData", 14500);
+		
+		delayLettringFn("bgLiveLabel", 17000);
+		delayLettringFn("bgLiveData", 19000);
+		
 
 
 	var BigDay = new Date("3 May 2013, 11:30:00");
@@ -45,7 +49,7 @@ $(document).ready(function(){
 
 function delayLettringFn(fldId, delayTime){
 	setTimeout(function() {
-			$("#"+fldId).css("display","block");
+			$("#"+fldId).css("display","table-cell");
 			$("#"+fldId).lettering().animateLetters({opacity:0},null,{randomOrder:false,time:1000,reset:true});
 		}, delayTime);
 }

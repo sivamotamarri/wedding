@@ -93,3 +93,12 @@ a {
 	float:left;
 	width:75%;
 }
+#brideGroomInfo tr td{
+	min-width:200px;
+	display:none;
+	/* font-size: 20px;
+  background:  -webkit-gradient(linear, left top, left bottom, from(#009933), to(#2C247A));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */ 
+
+}
