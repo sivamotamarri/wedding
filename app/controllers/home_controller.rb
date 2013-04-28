@@ -13,4 +13,8 @@ class HomeController < ApplicationController
   def engagement
     render :layout => 'engagement'
   end
+  
+  def wedding
+    render :layout => 'engagement'
+  end
 end

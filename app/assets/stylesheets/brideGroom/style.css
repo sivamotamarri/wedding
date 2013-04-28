@@ -10,7 +10,9 @@ body{
 }
 h2{
 color:#009933;
+width:50%;
 }
+
 .photo{
 	float:right;
 	width:80%;

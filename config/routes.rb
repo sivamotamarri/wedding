@@ -10,6 +10,7 @@ Wedding::Application.routes.draw do
    match '/groom' => 'home#groom', :as => :groom
    match '/bride' => 'home#bride', :as => :bride
    match '/engagement' => 'home#engagement' , :as => :engagement
+   match '/wedding' => 'home#wedding' , :as => :wedding
   # Sample of named route:
   #   match 'products/:id/purchase' => 'catalog#purchase', :as => :purchase
   # This route can be invoked with purchase_url(:id => product.id)
