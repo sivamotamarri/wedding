@@ -15,8 +15,7 @@
 // require_tree .
 
 
-function onAfter() {
-  
+function onAfter() {  
         $("#siva01").show();
         $("#siva01").lettering().animateLetters({
           opacity:0
@@ -41,9 +40,6 @@ function onAfter() {
           time:8000,
           reset:true
         });
-
-
-
 }
 function onBefore(){
 
@@ -70,7 +66,7 @@ $(document).ready(function(){
   }, 1000);
 
 
- $("#ropeGroom").hide();
+$("#ropeGroom").hide();
 	$curtainopen = false;
  	$(".rope").click(function(){
                 $('body').removeClass('first').addClass('second');
@@ -89,46 +85,7 @@ $(document).ready(function(){
 		}
 		return false;
 	});
-$('.item').hover(
-                function(){
-                    var $this = $(this);
-                    expand($this);
-                },
-                function(){
-                    var $this = $(this);
-                    collapse($this);
-                }
-            );
-	
-  
 });
 
 
-            function expand($elem){
-                var angle = 0;
-                var t = setInterval(function () {
-                    if(angle == 1440){
-                        clearInterval(t);
-                        return;
-                    }
-                    angle += 40;
-                    $('.link',$elem).stop().animate({rotate: '+=-40deg'}, 0);
-                },10);
-                $elem.stop().animate({width:'168px'}, 1000)
-                .find('.item_content').fadeIn(400,function(){
-                    $(this).find('p').stop(true,true).fadeIn(600);
-                });
-            }
-            function collapse($elem){
-                var angle = 1440;
-                var t = setInterval(function () {
-                    if(angle == 0){
-                        clearInterval(t);
-                        return;
-                    }
-                    angle -= 40;
-                    $('.link',$elem).stop().animate({rotate: '+=40deg'}, 0);
-                },10);
-                $elem.stop().animate({width:'52px'}, 1000)
-                .find('.item_content').stop(true,true).fadeOut().find('p').stop(true,true).fadeOut();
-            }
+            

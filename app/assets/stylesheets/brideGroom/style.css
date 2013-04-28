@@ -71,6 +71,7 @@ a {
 	float:left;
 	background: url("/assets/abstract-background-wallpaper-tws.jpg") no-repeat;
 	background-position:right;
+	height:650px;
 }
 .rightContainer{
 	width:5%;

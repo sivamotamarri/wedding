@@ -17,7 +17,7 @@ $(document).ready(function(){
 		delayLettringFn("ddAge", 16500);
 
 
-		var BigDay = new Date("3 May 2013, 11:30:00");
+	var BigDay = new Date("3 May 2013, 11:30:00");
 	var msPerDay = 24 * 60 * 60 * 1000 ;
 
 
@@ -42,6 +42,7 @@ $(document).ready(function(){
 		$('#countdown').html(timeString);
 	}, 1000);
 });
+
 function delayLettringFn(fldId, delayTime){
 	setTimeout(function() {
 			$("#"+fldId).css("display","block");

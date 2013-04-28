@@ -64,7 +64,7 @@
 .item_content a{
     background-color:transparent;
     float:left;
-    margin-right:7px;
+    margin-right:7px !important;
     margin-top:5px;
     color:#bbb;
     text-shadow: 1px 1px 1px #fff;
