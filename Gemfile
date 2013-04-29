@@ -10,7 +10,7 @@ gem 'rails', '3.2.12'
 
 group :production do
   gem 'pg'
-  gem 'mysql2' , '0.3.11'
+ # gem 'mysql2' , '0.3.11'
 end
 
 gem 'sqlite3'
