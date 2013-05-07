@@ -21,7 +21,7 @@ $(document).ready(function(){
 		
 
 
-	var BigDay = new Date("3 May 2013, 11:30:00");
+	var BigDay = new Date("26 May 2013, 22:46:00");
 	var msPerDay = 24 * 60 * 60 * 1000 ;
 
 
@@ -42,7 +42,9 @@ $(document).ready(function(){
 		var secsLeft = Math.floor(e_secsLeft);
 
 
-		var timeString = daysLeft + ' : ' + hrsLeft + ' : ' + minsLeft + ' : ' + secsLeft;
+		var timeString = daysLeft + '<span style="font-size:12px;"> D </span> : ' + hrsLeft + '<span style="font-size:12px;"> H </span> : ' + minsLeft + '<span style="font-size:12px;"> M </span> : ' + secsLeft + '<span style="font-size:12px;"> S </span>';
+                
+               
 		$('#countdown').html(timeString);
 	}, 1000);
 });
