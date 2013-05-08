@@ -64,7 +64,7 @@ $(document).ready(function(){
          setTimeout(function(){
            $(".rope").trigger('click');
          },1000);
-       },15000);
+       },18000);
  
   }, 1000);
 
