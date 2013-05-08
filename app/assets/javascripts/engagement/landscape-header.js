@@ -15,6 +15,8 @@ $(document).ready(function(){
 	delayLettringFnShowHide(".cloudbar", 15000, 0);
 	delayLettringFn("title02", 17000);
 	delayLettringFn("venueText", 18500);
+	delayLettringFnImage("#engPhotoCake", 20000);
+	
 	
 	delayLettringFn("inviteContent", 25000);
 

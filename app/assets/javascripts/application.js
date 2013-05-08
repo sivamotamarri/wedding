@@ -76,14 +76,14 @@ $("#ropeGroom").hide();
 		$(this).blur();
 		if ($curtainopen == false){
 			$(this).stop().animate({top: '0px' }, {queue:false, duration:350, easing:'easeOutBounce'});
-			$(".leftcurtain").stop().animate({width:'0px'}, 2000 );
-			$(".rightcurtain").stop().animate({width:'0px'},2000 );
+			$(".leftcurtain").stop().animate({width:'20px'}, 2000 );
+			$(".rightcurtain").stop().animate({width:'20px'},2000 );
 			$curtainopen = true;
 			$('#ropeAct').hide();
 		}else{
 			$(this).stop().animate({top: '-40px' }, {queue:false, duration:350, easing:'easeOutBounce'});
-			$(".leftcurtain").stop().animate({width:'50%'}, 2000 );
-			$(".rightcurtain").stop().animate({width:'51%'}, 2000 );
+			$(".leftcurtain").stop().animate({width:'20%'}, 2000 );
+			$(".rightcurtain").stop().animate({width:'20%'}, 2000 );
 			$curtainopen = false;
 		}
 		return false;
