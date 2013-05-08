@@ -21,7 +21,7 @@ $(document).ready(function(){
 		
 
 
-	var BigDay = new Date("3 May 2013, 11:30:00");
+	var BigDay = new Date("26 May 2013, 10:46:00");
 	var msPerDay = 24 * 60 * 60 * 1000 ;
 
 

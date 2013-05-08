@@ -53,3 +53,65 @@ color:#009933;
 	float:left;
 	width:75%;
 }
+
+
+
+
+/* CSS Document */
+@media screen and (max-width : 1024px)
+{
+
+body{
+	color:#FFFFFF;
+	background: url(/assets/indexBg.jpg) center center fixed;
+	background-size:cover;
+	padding:0;
+	margin:0;
+	font-family:myWeddingFont;
+}
+h2{
+color:#009933;
+}
+.photo{
+	float:right;
+	width:80%;
+}
+.timeFlag{
+	text-align:right;
+	width:370px;
+	margin-top: -99px;
+        margin-left: 130px;
+	color:#00CC33;
+	font-family:myWeddingFont;
+	font-size:24px;
+	padding-right:30px;
+	background-position:bottom;	
+}
+.container{
+	width:90%;
+}
+.leftContainer{
+	width:90%;
+	float:left;
+	background-position:right;
+	height:650px;
+}
+.rightContainer{
+	width:10%;
+	float:left;
+}
+.leftInner{
+	margin:0 auto;
+	width:88%;
+	float:right;
+	padding-top:30px;
+}
+.leftInnerLeft{
+	float:left;
+	width:25%;	
+}
+.leftInnerRight{
+	float:left;
+	width:75%;
+}
+}

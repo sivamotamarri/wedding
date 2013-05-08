@@ -6,6 +6,17 @@
 	margin-top:40%;
 	font-weight:normal !important;
 }
+@media screen and (min-width: 800px)
+{
+	.menu{
+		width:100px;
+		font-family: myWeddingFont !important;
+		font-size: 12px !important;
+		float:left;
+		margin-top:40%;
+		font-weight:normal !important;
+	}
+}
 .item{
     position:relative;
     background-color:#f0f0f0;

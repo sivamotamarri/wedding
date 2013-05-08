@@ -73,8 +73,8 @@ $("#ropeGroom").hide();
 		$(this).blur();
 		if ($curtainopen == false){
 			$(this).stop().animate({top: '0px' }, {queue:false, duration:350, easing:'easeOutBounce'});
-			$(".leftcurtain").stop().animate({width:'60px'}, 2000 );
-			$(".rightcurtain").stop().animate({width:'60px'},2000 );
+			$(".leftcurtain").stop().animate({width:'0px'}, 2000 );
+			$(".rightcurtain").stop().animate({width:'0px'},2000 );
 			$curtainopen = true;
 			$('#ropeAct').hide();
 		}else{
