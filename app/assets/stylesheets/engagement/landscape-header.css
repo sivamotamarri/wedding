@@ -101,13 +101,13 @@
 }
 
 #content{
-	background: none repeat scroll 0 0 #3B902F;
+    background: none repeat scroll 0 0 #3B902F;
     clear: both;
     height: 140px;
-    margin-left: 210px;
+    margin-left: 18%;
     padding: 10px;
     text-align: center;
-	padding-top:0px;
+    padding-top:0px;
 }
 		
 #content h2{
