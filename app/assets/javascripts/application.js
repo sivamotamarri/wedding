@@ -61,6 +61,9 @@ $(document).ready(function(){
          $("#flipbox1").hide();
 		 $('body').removeClass('first').addClass('second');
          $("#theater").show();
+         setTimeout(function(){
+           $(".rope").trigger('click');
+         },1000);
        },15000);
  
   }, 1000);
