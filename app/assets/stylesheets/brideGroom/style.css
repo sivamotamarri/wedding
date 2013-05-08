@@ -2,8 +2,9 @@
 
 body{
 	color:#FFFFFF;
-	background: url(/assets/indexBg.jpg) center center fixed;
-	background-size:cover;
+	/*background: url(/assets/indexBg.jpg) center center fixed;*/
+	background: url("/assets/bg.png") repeat-x scroll 0 -80px #CFB616;
+	/*background-size:cover;*/
 	padding:0;
 	margin:0;
 	font-family:myWeddingFont;
@@ -30,21 +31,6 @@ h2{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.photoInfo dl{
-	float:left;
-	margin:0;
-	display:none;
-	text-align:left;
-	font-size:15px;
-	clear:both;
-}
-.photoInfo dd{
-	float:right;
-	width:65%;
-	display:none;
-	text-align:left;
-	font-size:15px;
-}
 
 a {
     float: right;
@@ -59,7 +45,7 @@ a {
 	text-align:right;
 	width:370px;
 	margin-top: -99px;
-        margin-left: 187px;
+    margin-left: 187px;
 	color:#00CC33;
 	font-family:myWeddingFont;
 	font-size:24px;
@@ -87,6 +73,10 @@ a {
 	float:right;
 	padding-top:30px;
 }
+.marqueeClass{	
+	height:100px;
+	margin:15px 0 ;
+}
 .leftInnerLeft{
 	float:left;
 	width:25%;	
@@ -98,6 +88,11 @@ a {
 #brideGroomInfo tr td{
 	min-width:200px;
 	display:none;	
+	color:#2C7210;
+}
+#example02 img{
+		width:70%;
+		margin-top:30%;
 }
 
 /* CSS Document */
@@ -133,23 +128,7 @@ a {
 		background: -webkit-linear-gradient(#eee, #333);
 	  -webkit-background-clip: text;
 	  -webkit-text-fill-color: transparent;
-	}
-	.photoInfo dl{
-		float:left;
-		margin:0;
-		display:none;
-		text-align:left;
-		font-size:15px;
-		clear:both;
-	}
-	.photoInfo dd{
-		float:right;
-		width:65%;
-		display:none;
-		text-align:left;
-		font-size:15px;
-	}
-	
+	}	
 	a {
 		float: right;
 		color: #fff;
@@ -192,6 +171,10 @@ a {
 		width:100%;
 		float:right;
 		padding-top:30px;
+	}
+	.marqueeClass{	
+		height:100px;
+		margin:15px 0 ;
 	}
 	.leftInnerLeft{
 		float:left;

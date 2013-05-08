@@ -13,7 +13,7 @@
  */
 
 #flipbox1 {
-    background: url("love.png") no-repeat scroll 7.6% 22px / 34% auto transparent;
+   /* background: url("love.png") no-repeat scroll 7.6% 22px / 34% auto transparent;*/
     color: #ffffff;
     font-family: myWeddingFont;
     font-size: 2.5em;
@@ -30,4 +30,16 @@
 body{
   background: url("body-back-new.jpg") no-repeat scroll 0 0 transparent;
    font-family: myWeddingFont;  
+}
+.item_content a{
+    background-color:transparent;
+    float:left;
+    margin-right:7px;
+    margin-top:8px !important;
+    color:#bbb;
+    text-shadow: 1px 1px 1px #fff;
+    text-decoration:none;
+	color:#0b965b;
+	font-weight:normal !important;
+	padding-left:5px;
 }
